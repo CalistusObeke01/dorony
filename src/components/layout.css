@@ -1,3 +1,9 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+  --primary-color: #72448d;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -615,6 +621,337 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+/* HEADER STYLINGS */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-top: 24px;
+  margin-bottom: 0;
+  line-height: 50px;
+}
+
+header .container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .container nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  position: relative;
+  padding-top: 15px;
+}
+
+header .container nav ul li:first-child {
+  margin-left: 0;
+}
+
+header .container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+header .container nav ul li a:hover {
+  color: #f5f5f5;
+}
+
+header .container nav ul li a::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: #f5f5f5;
+  color: #f5f5f5;
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+header .container nav ul li a:hover::before {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  line-height: 50px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+
+/* HOME STYLINGS */
+
+.slideOne  {
+  min-height: calc(60vh);
+  margin-top: 75px;
+  background: url("../images/69290143-d975-4fda-889d-8197a01a5301.jpg") center/cover no-repeat;
+}
+
+/* APPOINTMENT STYLINGS */
+.form-control:focus {
+  color: red !important;
+}
+
+.appointment-title {
+  font-weight: lighter;
+}
+
+.appointment-booking-container {
+  background-color: #f5f5f5;
+}
+
+.appointment-booking-container a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.appointment-social {
+  background-color: #72448d;
+  color: #fff;
+  height: 38px;
+  width: 38px;
+  padding: 12px;
+}
+
+.appointment-social-info {
+  color: gray;
+  padding: 0.5rem;
+  font-size: medium;
+  width: 100%;
+}
+
+details > summary {
+  list-style-image: url("../images/gatsby-icon.png");
+  border: none;
+  outline: none;
+  font-weight: 500;
+
+}
+
+/* FOOTER STYLINGS */
+
+.footer {
+  background-color: #000;
+  padding: 3rem 0 1rem;
+}
+
+.footer-hr-container {
+  margin-bottom: 2.5rem;
+}
+
+.footer-hr {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+
+.footer-hr:after {
+  content: "\f00d";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: rgb(201, 191, 191);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-read-more {
+  color: #72448d;
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+}
+
+.footer-read-more:hover {
+  color: #f1f1f1;
+}
+
+.view a:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.footer-heading {
+  color: #808080;
+}
+
+.footer-text {
+  color: #707070;
+}
+
+.footer-link ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.footer-link ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-link ul li a:hover {
+  color: #808080;
+}
+
+.copyright {
+  padding: 35px 0;
+  width: 100%;
+  margin: 0;
+  background-color: #72448d;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-content {
+  color: rgba(255,255,255,.32);
+}
+
+.copyright-content small > a {
+  color: #f1f1f1;
+}
+
+.float {
+	width: 60px;
+	height: 60px;
+  padding: 7px 10px;
+  background-color: #72448d;
+  opacity: 0.8;
+	color:#FFF;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 2px 2px 3px #000;
+}
+
+/* SOCIAL STYLINGS */
+
+.social-container {
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+
+.social-container:last-child {
+  margin-right: 0;
+}
+
+.social-container a:hover {
+  color: #808080;
+}
+
+/* BUTTON STYLINGS */
+
+.btnStyling {
+  padding: 0.8rem 1.4rem;
+  background-color: #72448d;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.appointment-btn {
+  float: right;
+  outline: none;
+  border: none;
+  background-color: #72448d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.appointment-btn:hover {
+  background: linear-gradient(45deg, #5c3474 90%, #72448d 0%);
+}
+
+.location-btn a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btnStyling:hover {
+  background: linear-gradient(45deg, #5c3474 90%, #72448d 0%);
+}
+
+@media only screen and (max-width: 768px) {
+  header .container .hide-nav {
+    display: none;
+  }
+
+  header .container .show-nav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh- 50px);
+    background-color: #5c3474;
+    top: 50px;
+    left: 0;
+    transition: 0.5s;
+  }
+
+  header .container .show-nav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  header .container .menu-toggle {
+    display: block;
+    padding-bottom: 6px;
+  }
+
+  .logo {
+    padding-top: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+ .copyright-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright-content {
+    text-align: center;
+  }
+
+  .social {
+    margin-top: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

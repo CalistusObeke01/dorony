@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Doronybeauy & Skincare`,
+    description: `Its all about beautification. We beautify your face and skin leaving it spotless and flawless`,
+    address: `59B, Lagos crescent crystal estate, amuwo-odofin`,
+    email: `info@doronybeauty.com`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -21,6 +23,7 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
+        primary_color: `#72448d`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
