@@ -707,11 +707,11 @@ header .container nav ul li a:hover::before {
 
 /* HOME STYLINGS */
 
-.slideOne  {
+/* .slideOne  {
   min-height: calc(60vh);
   margin-top: 75px;
   background: url("../images/69290143-d975-4fda-889d-8197a01a5301.jpg") center/cover no-repeat;
-}
+} */
 
 /* APPOINTMENT STYLINGS */
 .form-control:focus {
